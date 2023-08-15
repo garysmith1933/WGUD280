@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { WorldComponent } from './world/world.component';
+
+const appRoutes: Routes = [
+  {path: '', component: WorldComponent }
+]
 
 @NgModule({
   declarations: [
@@ -10,7 +15,8 @@ import { WorldComponent } from './world/world.component';
     WorldComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes, {enableTracing:true})
   ],
   providers: [],
   bootstrap: [AppComponent]

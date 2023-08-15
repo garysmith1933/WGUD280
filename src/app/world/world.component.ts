@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./world.component.css']
 })
 export class WorldComponent {
-
 }
