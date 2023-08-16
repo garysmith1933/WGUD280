@@ -9,6 +9,7 @@ import { Subscription } from 'rxjs';
 })
 export class WorldComponent implements OnInit, OnDestroy {
   countryInfo: any;
+  
   private apiDataSubscription: Subscription | undefined;
 
   constructor(private dataService: DataService) {}
