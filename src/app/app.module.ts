@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { WorldComponent } from './world/world.component';
+import { SvgMapComponent } from './svg-map/svg-map.component';
 
 const appRoutes: Routes = [
   {path: '', component: WorldComponent }
@@ -12,11 +13,12 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    WorldComponent
+    WorldComponent,
+    SvgMapComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, {enableTracing:true})
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
