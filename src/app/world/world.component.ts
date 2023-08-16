@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
 
 
 export class WorldComponent {
-  // svg = document.getElementById("svg")
-  // paths = this.svg.querySelectorAll("path")
+  
 }
