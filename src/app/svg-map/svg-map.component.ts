@@ -18,16 +18,16 @@ export class SvgMapComponent implements AfterViewInit {
     paths.forEach((path: SVGPathElement) => {
       path.addEventListener('click', () => {
         const pathID = path.getAttribute('id') as string;
+         // the id is just the abbreviation for the country name
         this.getData(pathID)
       })
     });
   }
 
-  private getData(id: string) {
-    const url: string = `http://api.worldbank.org/v2/country/${id}?format=json`
+  private getData(countryName: string) {
+    const url: string = `http://api.worldbank.org/v2/country/${countryName}?format=json`
     this.http.get<any[][]>(url).subscribe(response => {
       const data = response[1][0]
-      console.log(data)
       this.dataService.setApiData(data);
 
       this.cdr.detectChanges();

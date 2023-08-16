@@ -16,7 +16,6 @@ export class WorldComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.apiDataSubscription = this.dataService.getApiDataObservable().subscribe((data) => {
       this.countryInfo = data;
-      console.log(this.countryInfo);
     });
   }
 

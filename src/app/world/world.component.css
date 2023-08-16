@@ -12,7 +12,7 @@
   background-color: lightblue;
   height: 100vh;
   width: 40%;
-  margin-right: 0;
+  margin-right: -4rem;
   padding: 0;
 }
 
@@ -31,4 +31,10 @@ p {
 }
 span {
   font-weight: 300;
+}
+
+footer {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color:navy;
 }
