@@ -9,17 +9,12 @@ export class SvgMapComponent implements AfterViewInit {
   @ViewChild('svg') svgElement!: ElementRef;
 
   ngAfterViewInit(): void {
-    if (this.svgElement && this.svgElement.nativeElement) {
-      const paths = this.svgElement.nativeElement.querySelectorAll('path');
-      paths.forEach((path: SVGPathElement) => {
-        path.addEventListener("mouseover", () => {
-
-        })
-        path.addEventListener('click', () => {
-          const pathId = path.getAttribute('id');
-          console.log(`Path ID: ${pathId}`);
-        })
-      });
-    }
+    const paths = this.svgElement.nativeElement.querySelectorAll('path');
+    paths.forEach((path: SVGPathElement) => {
+      path.addEventListener('click', () => {
+        const pathId = path.getAttribute('id');
+        console.log(`Path ID: ${pathId}`);
+      })
+    });
   }
 }
