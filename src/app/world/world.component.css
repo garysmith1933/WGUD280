@@ -6,9 +6,29 @@
 
 #map-data-column {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: lightblue;
   height: 100vh;
-  width: 30%;
+  width: 40%;
+  margin-right: 0;
+  padding: 0;
+}
+
+#country-data {
+  display:flex;
+  flex-direction: column;
+}
+
+#country-headers {
+  margin-bottom: 2rem;
+}
+
+p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+span {
+  font-weight: 300;
 }
