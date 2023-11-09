@@ -2,6 +2,7 @@
   display:flex;
   justify-content:center;
   align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #map-data-column {
@@ -9,11 +10,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
+  background-color: #292f36;
   height: 100vh;
   width: 40%;
-  margin-right: -4rem;
   padding: 0;
+  border-radius: 10px;
+  color: white;
 }
 
 #country-data {
@@ -36,5 +38,5 @@ span {
 footer {
   font-weight: bold;
   font-size: 1.5rem;
-  color:navy;
+  color:#292f36
 }
