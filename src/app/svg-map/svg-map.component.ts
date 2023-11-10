@@ -25,7 +25,7 @@ export class SvgMapComponent implements AfterViewInit {
   }
 
   private getData(countryName: string) {
-    const url: string = `http://api.worldbank.org/v2/country/${countryName}?format=json`
+    const url: string = `https://api.worldbank.org/v2/country/${countryName}?format=json`
     this.http.get<any[][]>(url).subscribe(response => {
       const data = response[1][0]
       this.dataService.setApiData(data);
